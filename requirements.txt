@@ -1,0 +1,10 @@
+# Test runner
+pytest>=7.0
+
+# STT
+deepgram-sdk~=7.8  # pinned — v7 API differs from v3-v6, see stt.py
+sounddevice>=0.4  # only needed for scripts/test_stt.py (mic recording)
+python-dotenv>=1.0  # loads .env into os.environ
+
+# TTS
+requests>=2.28  # for Rime REST API
